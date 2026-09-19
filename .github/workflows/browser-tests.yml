@@ -2,6 +2,8 @@ name: Glass browser regression tests
 
 on:
   push:
+    branches-ignore:
+      - 'gh-pages'
   pull_request:
   workflow_dispatch:
 
@@ -19,7 +21,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      - run: npm install
       - run: npx tsc --noEmit
       - run: npx playwright install --with-deps chromium firefox webkit
       - run: npx playwright test
