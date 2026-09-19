@@ -1,4 +1,5 @@
 <div align="center">
+<img src="public/favicon.png" alt="Liquid Glass Generator screenshot" width="100">
 
 # Liquid Glass Generator
 
@@ -10,10 +11,9 @@
 
 <!-- Developed by **Samanway Koley** -->
 
-<!-- Replace docs/screenshot.png with a screenshot of the software (recommended: 1600x900 PNG). -->
-<img src="public/favicon.png" alt="Liquid Glass Generator screenshot" width="400">
-
 </div>
+<br/>
+<img width="1430" height="682" alt="image" src="https://github.com/user-attachments/assets/598a1934-1ff8-4bfb-80d4-95d0f2357dd6" />
 
 ---
 
