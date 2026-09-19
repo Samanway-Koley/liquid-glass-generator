@@ -11,7 +11,7 @@
 <!-- Developed by **Samanway Koley** -->
 
 <!-- Replace docs/screenshot.png with a screenshot of the software (recommended: 1600x900 PNG). -->
-<img src="docs/screenshot.png" alt="Liquid Glass Generator screenshot" width="800">
+<img src="public/favicon.png" alt="Liquid Glass Generator screenshot" width="400">
 
 </div>
 
