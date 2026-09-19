@@ -4,12 +4,14 @@
 
 **Design glossy, physically-inspired glass surfaces with pure CSS variables, then export production-ready code.**
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+<!-- ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![Browsers](https://img.shields.io/badge/browsers-Chromium%20%7C%20Firefox%20%7C%20WebKit-orange)
-![jQuery](https://img.shields.io/badge/jQuery-3.7.1-0769ad)
+![jQuery](https://img.shields.io/badge/jQuery-3.7.1-0769ad) -->
 
-Developed by **Samanway Koley**
+<!-- Developed by **Samanway Koley** -->
+
+<!-- Replace docs/screenshot.png with a screenshot of the software (recommended: 1600x900 PNG). -->
+<img src="docs/screenshot.png" alt="Liquid Glass Generator screenshot" width="800">
 
 </div>
 
@@ -17,25 +19,13 @@ Developed by **Samanway Koley**
 
 ## Table of Contents
 
-1. [Overview](#1-overview)
-2. [Quick Start](#2-quick-start)
-3. [Requirements](#3-requirements)
-4. [Integration Guide](#4-integration-guide)
-5. [Configuration Reference](#5-configuration-reference)
-6. [JavaScript API](#6-javascript-api)
-7. [How It Works](#7-how-it-works)
-8. [Cross-Browser Rendering](#8-cross-browser-rendering)
-9. [Supported and Unsupported Scenarios](#9-supported-and-unsupported-scenarios)
-10. [Accessibility and User Preferences](#10-accessibility-and-user-preferences)
-11. [Exporting from the Generator](#11-exporting-from-the-generator)
-12. [Project Architecture](#12-project-architecture)
-13. [Development](#13-development)
-14. [Browser Regression Testing](#14-browser-regression-testing)
-15. [Troubleshooting](#15-troubleshooting)
-16. [Frequently Asked Questions](#16-frequently-asked-questions)
-17. [Migration Notes](#17-migration-notes)
-18. [Versioning and Release Notes](#18-versioning-and-release-notes)
-19. [License](#19-license)
+| Group | Sections |
+| :--- | :--- |
+| **Getting Started** | [1. Overview](#1-overview) · [2. Quick Start](#2-quick-start) · [3. Requirements](#3-requirements) · [4. Integration Guide](#4-integration-guide) |
+| **Reference** | [5. Configuration](#5-configuration-reference) · [6. JavaScript API](#6-javascript-api) · [7. How It Works](#7-how-it-works) |
+| **Compatibility** | [8. Cross-Browser Rendering](#8-cross-browser-rendering) · [9. Supported Scenarios](#9-supported-and-unsupported-scenarios) · [10. Accessibility](#10-accessibility-and-user-preferences) |
+| **Project** | [11. Exporting](#11-exporting-from-the-generator) · [12. Architecture](#12-project-architecture) · [13. Development](#13-development) · [14. Testing](#14-browser-regression-testing) |
+| **Help** | [15. Troubleshooting](#15-troubleshooting) · [16. FAQ](#16-frequently-asked-questions) · [17. Migration Notes](#17-migration-notes) · [18. Release Notes](#18-versioning-and-release-notes) |
 
 ---
 
@@ -557,32 +547,74 @@ The tests are provided as **regression coverage**, not as a claim of completed n
 
 ## 16. Frequently Asked Questions
 
-**Do I need to write any JavaScript?**
+**Getting started**
+
+<details>
+<summary><b>Do I need to write any JavaScript?</b></summary>
+
 No. Include the scripts, add the `liquid-glass` class, and elements are initialized automatically.
 
-**Can I use it with a background image hosted on another domain?**
-Yes. Image pixels are not read via canvas, so CORS headers are not required. The image only has to load successfully.
+</details>
 
-**Does it work in Safari and Firefox?**
-Yes. The same rendering path is used in Chrome, Firefox and Safari.
+<details>
+<summary><b>Can I put multiple glass elements on one page?</b></summary>
 
-**Can I put multiple glass elements on one page?**
-Yes. Each element is handled independently and multiple elements are covered by the test suite.
+Yes. Each element is handled independently, and multiple elements are covered by the test suite.
 
-**Can the glass refract text, video or other elements behind it?**
-No. It refracts the selected image or background plane only. Use `--lg-source: none` if the glass overlays complex live content.
+</details>
 
-**Is this the same as Apple's Liquid Glass?**
-No. It is an independent implementation, and browser rasterization can vary slightly. It is not Apple's or Figma's proprietary rendering engine.
+<details>
+<summary><b>How do I change the look after exporting?</b></summary>
 
-**How do I change the look after exporting?**
 Edit the CSS variables in `liquid-glass.css`, or override them in your own stylesheet.
 
-**Can I remove the effect from one element?**
+</details>
+
+<details>
+<summary><b>Can I remove the effect from one element?</b></summary>
+
 Yes. Call `$(element).liquidGlass('destroy')`.
 
-**Will it work offline?**
+</details>
+
+**Compatibility**
+
+<details>
+<summary><b>Does it work in Safari and Firefox?</b></summary>
+
+Yes. The same rendering path is used in Chrome, Firefox and Safari.
+
+</details>
+
+<details>
+<summary><b>Can I use a background image hosted on another domain?</b></summary>
+
+Yes. Image pixels are not read via canvas, so CORS headers are not required. The image only has to load successfully.
+
+</details>
+
+<details>
+<summary><b>Will it work offline?</b></summary>
+
 Yes, if you host jQuery and your background image locally.
+
+</details>
+
+**Limits**
+
+<details>
+<summary><b>Can the glass refract text, video or other elements behind it?</b></summary>
+
+No. It refracts the selected image or background plane only. Use `--lg-source: none` if the glass overlays complex live content.
+
+</details>
+
+<details>
+<summary><b>Is this the same as Apple's Liquid Glass?</b></summary>
+
+No. It is an independent implementation, and browser rasterization can vary slightly. It is not Apple's or Figma's proprietary rendering engine.
+
+</details>
 
 ---
 
@@ -613,13 +645,3 @@ If you are upgrading from an older export, replace your existing `liquid-glass.c
 - Automatic updates on resize, scroll and stylesheet changes.
 - Shared source for preview and exports.
 - Playwright regression suite for Chromium, Firefox and WebKit on Linux and macOS.
-
----
-
-## 19. License
-
-Released under the **MIT License**.
-
-Copyright (c) 2026 Samanway Koley.
-
-Permission is granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the software without restriction, subject to the conditions of the MIT License.
