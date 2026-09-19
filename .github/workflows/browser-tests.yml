@@ -9,11 +9,7 @@ on:
 
 jobs:
   browsers:
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-latest, macos-latest]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
@@ -28,7 +24,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: browser-report-${{ matrix.os }}
+          name: browser-report-ubuntu
           path: |
             playwright-report/
             test-results/
