@@ -1,9 +1,6 @@
 <div align="center">
 <img src="public/favicon.png" alt="Liquid Glass Generator screenshot" width="100">
 
-<div align="center">
-<img src="public/favicon.png" alt="Liquid Glass Generator screenshot" width="100">
-
 # Liquid Glass Generator
 
 **Design glossy, physically-inspired glass surfaces with pure CSS variables, then export production-ready code.**
