@@ -1,4 +1,5 @@
 <div align="center">
+<img src="public/favicon.png" alt="Liquid Glass Generator screenshot" width="100">
 
 <div align="center">
 <img src="public/favicon.png" alt="Liquid Glass Generator screenshot" width="100">
@@ -12,10 +13,14 @@
 ![jQuery](https://img.shields.io/badge/jQuery-3.7.1-0769ad) -->
 
 <!-- Developed by **Samanway Koley** -->
-
+<a href="https://samanway-koley.github.io/liquid-glass-generator/">
+  <img src="https://img.shields.io/badge/Live_Preview-blue?style=for-the-badge&logo=globe&logoColor=white" alt="Live Preview">
+</a>
 </div>
 <br/>
 <img width="1430" height="682" alt="image" src="https://github.com/user-attachments/assets/598a1934-1ff8-4bfb-80d4-95d0f2357dd6" />
+
+---
 
 ## Table of Contents
 
